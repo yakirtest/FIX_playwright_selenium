@@ -1,0 +1,128 @@
+{
+  "user_name":
+    {
+      "valid_user": {
+        "Name": "admin11111@gmail.com",
+        "passwd": "admin11111"
+      },
+      "Invalid_user": {
+        "Name": "Unverified_admin@gmail.com",
+        "passwd": "Unverified_admin"
+      }
+    }
+  ,
+  "Aut_page_locators":
+    {
+      "login_locators": {
+        "Sign in": [
+          "link text",
+          "Sign in"
+        ],
+        "email": [
+          "id",
+          "email"
+        ],
+        "passwd": [
+          "id",
+          "passwd"
+        ],
+        "SubmitLogin": [
+          "name",
+          "SubmitLogin"
+        ]
+      }
+    }
+  ,
+  "Search_page_locators":
+    {
+      "search_locators": {
+        "input_search": [
+          "xpath",
+          "//input[@id='search_query_top']"
+        ],
+        "button_search": [
+          "xpath",
+          "//button[@name='submit_search']"
+        ]
+      },
+      "get_user_name_locators": {
+        "div_get_user_name": [
+          "class name",
+          "header_user_info"
+        ],
+        "span_get_user_name": [
+          "tag name",
+          "span"
+        ]
+      },
+      "get_error_message_Invalid_user_locators": {
+        "il_get_error_message": [
+          "css selector",
+          "#center_column > div.alert.alert-danger > ol > li"
+        ]
+      }
+    }
+  ,
+  "Cart_page_locators":
+    {
+      "min_price_locators": {
+        "dresses_min_price": [
+          "xpath",
+          "//div[@class='right-block']"
+        ],
+        "urls_min_price": [
+          "xpath",
+          "//a[@title='Add to cart']"
+        ]
+      },
+      "get_search_word_locators": {
+        "span_get_search_word": [
+          "css selector",
+          "#center_column > h1 > span.lighter"
+        ]
+      }
+    }
+  ,
+  "Pay_page_locators":
+    {
+      "pay_locators": {
+        "a1_pay_locators": [
+          "xpath",
+          "//a[@class='button btn btn-default standard-checkout button-medium']"
+        ],
+        "button1_pay_locators": [
+          "xpath",
+          "//button[@class='button btn btn-default button-medium']"
+        ],
+        "input_pay_locators": [
+          "xpath",
+          "//input[@type='checkbox']"
+        ],
+        "button2_pay_locators": [
+          "xpath",
+          "//button[@name='processCarrier']"
+        ],
+        "a2_pay_locators": [
+          "xpath",
+          "//a[@class='bankwire']"
+        ],
+        "button3_pay_locators": [
+          "xpath",
+          "//button[@class='button btn btn-default button-medium']"
+        ]
+      },
+      "get_price_product_locators": {
+        "price_locators": [
+          "css selector",
+          "#total_product"
+        ]
+      },
+      "get_end_message_locators": {
+        "end_message_locators": [
+          "css selector",
+          "#center_column > div > p > strong"
+        ]
+      }
+    }
+}
+
