@@ -1,14 +1,15 @@
-from HW_playwright.Driver import *
+from playwright.sync_api import sync_playwright
+from HW_playwright.pages.authntication_page import Authntication_page
 import time
+
 
 if __name__ == '__main__':
     with sync_playwright() as playwright:
-        mainpage = Driver(playwright).start_driver()
-        time.sleep(10)
-        authntication = mainpage.sign_in()
-        search = authntication.login("valid_user")
+        mainpage = Authntication_page(playwright)
+        search=mainpage.login("valid_user")
+        # search = mainpage.login("Invalid_user")
         cart = search.search("summer")
         pay = cart.add_to_cart()
         finis = pay.pay()
-        print(finis)
+        print(finis.get_end_message())
         time.sleep(30)

@@ -1,0 +1,90 @@
+{
+  "user_name": {
+    "valid_user": {
+      "Name": "admin11111@gmail.com",
+      "passwd": "admin11111"
+    },
+    "Invalid_user": {
+      "Name": "Unverified_admin@gmail.com",
+      "passwd": "Unverified_admin"
+    }
+  },
+
+  "Aut_page_locators": {
+    "login_locators": {
+      "Sign in": "a[title='Log in to your customer account']",
+      "email": "input[id='email']",
+      "passwd": "input[id='passwd']",
+      "SubmitLogin": "button[id='SubmitLogin']"
+    }
+  },
+
+  "Search_page_locators": {
+    "search_locators": {
+      "input_search": "input[id='search_query_top']",
+      "button_search": "button[name='submit_search']"
+    },
+    "get_user_name_locators": {
+      "span_get_user_name": "text=Admin admin"
+    },
+    "get_error_message_Invalid_user_locators": {
+      "il_get_error_message": "#center_column > div.alert.alert-danger > ol > li"
+    }
+  },
+
+  "Cart_page_locators": {
+    "min_price_locators": {
+      "dress1": [
+        "//*[@id='center_column']/ul/li[1]/div/div[2]/div[2]/a[1]",
+        "//*[@id='center_column']/ul/li[1]/div/div[2]/div[1]/span[1]"
+      ],
+      "dress2": [
+        "//*[@id='center_column']/ul/li[2]/div/div[2]/div[2]/a[1]",
+        "//*[@id='center_column']/ul/li[2]/div/div[2]/div[1]/span"
+      ],
+      "dress3": [
+        "//*[@id='center_column']/ul/li[3]/div/div[2]/div[2]/a[1]",
+        "//*[@id='center_column']/ul/li[3]/div/div[2]/div[1]/span[1]"
+      ],
+      "dress4": [
+        "//*[@id='center_column']/ul/li[4]/div/div[2]/div[2]/a[1]",
+        "//*[@id='center_column']/ul/li[4]/div/div[2]/div[1]/span"]
+
+
+    },
+    "get_search_word_locators": {
+      "span_get_search_word":
+        "#center_column > h1 > span.lighter"
+    }
+  },
+
+  "Pay_page_locators": {
+    "pay_locators": {
+      "a1_pay_locators":
+        "a[class='button btn btn-default standard-checkout button-medium']"
+      ,
+      "button1_pay_locators":
+       "button[name='processAddress']"
+      ,
+      "input_pay_locators":
+        "div[class='checker']"
+      ,
+      "button2_pay_locators":
+        "button[name='processCarrier']"
+      ,
+      "a2_pay_locators":
+        "a[title='Pay by bank wire']"
+      ,
+      "button3_pay_locators":
+        "button[class='button btn btn-default button-medium']"
+    },
+    "get_price_product_locators": {
+      "price_locators": "#total_product"
+    },
+    "get_end_message_locators": {
+      "end_message_locators":
+        "#center_column > div > p > strong"
+    }
+  }
+}
+
